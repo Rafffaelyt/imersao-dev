@@ -1,4 +1,13 @@
 @import url('https://fonts.google.com/specimen/Comic+Neue?query=comic+sans');
+#rpg-container {
+    position: fixed;
+    border-radius: 0.6rem; /* Borda arredondada */
+    bottom: 20px;
+    right: 20px;
+    background-color: #7e0000;
+    padding: 10px;
+    width: 300px;
+}
 /* Estiliza o corpo da página */
 body {
     font-family:"Comic Neue", sans-serif; /* Define a fonte padrão */
@@ -40,7 +49,7 @@ section {
 
 /* Estiliza os inputs dentro das seções */
 section input {
-    width: 30rem; /* Largura dos inputs */
+    width: 50rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
@@ -72,18 +81,18 @@ section button {
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
-section button:hover {
-    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+.pesquisar:hover {
+    background-color: #4d4d4d; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+    width: 100rem; /* Largura máxima da caixa de resultados */
+    height: 50vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
+    padding: 5rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
 }
 
