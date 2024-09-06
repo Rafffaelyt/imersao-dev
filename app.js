@@ -4,6 +4,11 @@ function pesquisar() {
     const inputPesquisa = document.getElementById("campo-pesquisa");
     
     const termoPesquisa = inputPesquisa.value.toLowerCase();
+    if (termoPesquisa == "") {
+        section.innerHTML = `<p>Digite o nome de um personagem<p>`
+
+        return
+    };
     const resultadosFiltrados = dados.filter(dado => dado.nome.toLowerCase().includes(termoPesquisa));
     let resultados = "";
     resultadosFiltrados.forEach(dado => {
